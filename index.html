@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhumi Investors Infra</title>
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Icons CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="css/main.css" type="text/css" />
+    
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="w-full bg-black border-b border-yellow-600 fixed top-0 left-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <div class="flex items-center"><a href="/">
+                    <img src="img/logo.png" alt="Bhumi Investors Infra" class="h-12 w-auto">
+                </a></div>
+                <!-- Desktop Menu -->
+                <div class="hidden lg:flex items-center space-x-8 text-sm font-semibold text-gray-200">
+                    <a href="/" class="hover:text-yellow-400 transition duration-300">Home</a>
+                    <!-- <a href="#" class="hover:text-yellow-400 transition duration-300">Luxury Villas</a>
+                    <a href="#" class="hover:text-yellow-400 transition duration-300">Locations</a> -->
+                    <a href="/celestia-retreat" class="hover:text-yellow-400 transition duration-300">Celestia Retreat</a>
+                    <a href="/gallery" class="hover:text-yellow-400 transition duration-300">Gallery</a>
+                    <a href="/about-us" class="hover:text-yellow-400 transition duration-300">About Us</a>
+                    <a href="/contact-us" class="hover:text-yellow-400 transition duration-300">Contact Us</a>
+                </div>
+                <!-- WhatsApp Button -->
+                <div class="hidden lg:flex">
+                    <a href="https://wa.me/919999999999" class="flex items-center gap-2 bg-green-500 hover:bg-green-600
+text-white font-semibold px-5 py-2 rounded-md transition duration-300">
+                        <i class="fa-brands fa-whatsapp text-lg"></i>
+                        WhatsApp
+                    </a>
+                </div>
+                <!-- Mobile Menu Button -->
+                <div class="lg:hidden flex items-center">
+                    <button id="menu-btn" class="text-yellow-500">
+                        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-black border-t border-yellow-600">
+            <div class="flex flex-col space-y-4 px-6 py-6 text-gray-200 font-medium">
+                <a href="/" class="hover:text-yellow-400">Home</a>
+                <!-- <a href="#" class="hover:text-yellow-400">Luxury Villas</a>
+                <a href="#" class="hover:text-yellow-400">Locations</a> -->
+                <a href="/celestia-retreat.html" class="hover:text-yellow-400">Celestia Retreat</a>
+                <a href="/gallery.html" class="hover:text-yellow-400">Gallery</a>
+                <a href="/about-us.html" class="hover:text-yellow-400">About Us</a>
+                <a href="/contact-us.html" class="hover:text-yellow-400">Contact Us</a>
+                <a href="https://wa.me/919354541413"
+                    class="flex items-center justify-center gap-2 bg-green-500 hover:bg-green-600 text-white py-2 rounded-md">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    WhatsApp
+                </a>
+            </div>
+        </div>
+    </nav>
+    <section class="relative w-full h-screen flex items-center justify-center overflow-hidden">
+
+  <!-- Background Video -->
+  <video autoplay muted loop playsinline class="absolute inset-0 w-full h-full object-cover">
+    <source src="img/hero-video.mp4" type="video/mp4">
+  </video>
+
+  <!-- Overlay -->
+  <div class="absolute inset-0 bg-black/60"></div>
+
+  <!-- Hero Content -->
+  <div class="relative z-10 max-w-5xl px-6 text-center text-white">
+
+    <div class="inline-block bg-yellow-600 text-black font-semibold px-4 py-1 mb-6 text-sm tracking-wide">
+      STARTING FROM ₹1.25 CR | ONLY 30 EXCLUSIVE UNITS
+    </div>
+
+    <div class="hero-slider relative">
+
+      <!-- Slide 1 -->
+      <div class="hero-slide active">
+        <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold leading-tight mb-6">
+          Fully Managed Luxury Villas <br> Near Kanatal
+        </h1>
+        <p class="text-sm sm:text-base md:text-lg text-gray-200 mb-8">
+          Experience peaceful Himalayan living with breathtaking views and premium villa ownership.
+        </p>
+        <a href="#" class="inline-block bg-green-600 hover:bg-green-700 transition px-8 py-3 text-sm font-semibold tracking-wide rounded">
+          GET PRICING
+        </a>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="hero-slide">
+        <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold leading-tight mb-6">
+          Own a Piece of the Himalayas
+        </h1>
+        <p class="text-sm sm:text-base md:text-lg text-gray-200 mb-8">
+          Celestia Retreat offers only 30 exclusive villas surrounded by nature and panoramic mountain views.
+        </p>
+        <a href="#" class="inline-block bg-green-600 hover:bg-green-700 transition px-8 py-3 text-sm font-semibold tracking-wide rounded">
+          EXPLORE VILLAS
+        </a>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="hero-slide">
+        <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold leading-tight mb-6">
+          Smart Ownership Investment
+        </h1>
+        <p class="text-sm sm:text-base md:text-lg text-gray-200 mb-8">
+          Enjoy luxury living while generating passive income with professional rental management.
+        </p>
+        <a href="#" class="inline-block bg-green-600 hover:bg-green-700 transition px-8 py-3 text-sm font-semibold tracking-wide rounded">
+          VIEW INVESTMENT
+        </a>
+      </div>
+
+      <!-- Slide 4 -->
+      <div class="hero-slide">
+        <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold leading-tight mb-6">
+          Resort Style Mountain Living
+        </h1>
+        <p class="text-sm sm:text-base md:text-lg text-gray-200 mb-8">
+          Infinity pool, wellness spa, clubhouse, and curated experiences designed for elite lifestyles.
+        </p>
+        <a href="#" class="inline-block bg-green-600 hover:bg-green-700 transition px-8 py-3 text-sm font-semibold tracking-wide rounded">
+          DISCOVER AMENITIES
+        </a>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section class="py-16 bg-gray-100">
+  <div class="max-w-7xl mx-auto px-6">
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+
+      <!-- Card 1 -->
+      <div class="flex items-center gap-4 bg-white border rounded-xl p-5 transition duration-300 hover:shadow-lg hover:-translate-y-1">
+        <div class="w-14 h-14 flex items-center justify-center rounded-full bg-yellow-100 text-yellow-700 text-xl">
+          <i class="fa-solid fa-hard-hat"></i>
+        </div>
+        <p class="text-gray-700 font-medium">World-Class Construction</p>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="flex items-center gap-4 bg-white border rounded-xl p-5 transition duration-300 hover:shadow-lg hover:-translate-y-1">
+        <div class="w-14 h-14 flex items-center justify-center rounded-full bg-yellow-100 text-yellow-700 text-xl">
+          <i class="fa-solid fa-hand-holding-dollar"></i>
+        </div>
+        <p class="text-gray-700 font-medium">Next-Level Freehold Ownership</p>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="flex items-center gap-4 bg-white border rounded-xl p-5 transition duration-300 hover:shadow-lg hover:-translate-y-1">
+        <div class="w-14 h-14 flex items-center justify-center rounded-full bg-yellow-100 text-yellow-700 text-xl">
+          <i class="fa-solid fa-building"></i>
+        </div>
+        <p class="text-gray-700 font-medium">International Standard Interiors</p>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="flex items-center gap-4 bg-white border rounded-xl p-5 transition duration-300 hover:shadow-lg hover:-translate-y-1">
+        <div class="w-14 h-14 flex items-center justify-center rounded-full bg-yellow-100 text-yellow-700 text-xl">
+          <i class="fa-solid fa-screwdriver-wrench"></i>
+        </div>
+        <p class="text-gray-700 font-medium">24/7/365 Maintenance</p>
+      </div>
+<!-- 
+      
+      <div class="flex items-center gap-4 bg-white border rounded-xl p-5 transition duration-300 hover:shadow-lg hover:-translate-y-1">
+        <div class="w-14 h-14 flex items-center justify-center rounded-full bg-yellow-100 text-yellow-700 text-xl">
+          <i class="fa-solid fa-hotel"></i>
+        </div>
+        <p class="text-gray-700 font-medium">The Best-in-Class Facilities</p>
+      </div>
+
+      
+      <div class="flex items-center gap-4 bg-white border rounded-xl p-5 transition duration-300 hover:shadow-lg hover:-translate-y-1">
+        <div class="w-14 h-14 flex items-center justify-center rounded-full bg-yellow-100 text-yellow-700 text-xl">
+          <i class="fa-solid fa-user-tie"></i>
+        </div>
+        <p class="text-gray-700 font-medium">Best-in-Class Hospitality Team</p>
+      </div> -->
+
+    </div>
+
+  </div>
+</section>
+
+<section class="relative py-8 bg-gray-100 overflow-hidden">
+
+  <!-- Decorative Shapes (Desktop Only) -->
+  <div class="hidden lg:block absolute -left-20 top-32 w-64 h-64 border-[12px] border-green-900 rotate-45 opacity-70"></div>
+  <div class="hidden lg:block absolute right-10 bottom-20 w-40 h-40 border-[10px] border-gray-300 rotate-12 opacity-40"></div>
+
+  <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center">
+
+    <!-- Image -->
+    <div class="relative flex justify-center">
+      <div class="relative rounded-3xl overflow-hidden shadow-xl">
+        <img src="img/luxury-villa.jpg" alt="Luxury Villas" class="w-full h-full object-cover transition duration-700 hover:scale-105">
+      </div>
+    </div>
+
+    <!-- Content -->
+    <div>
+
+      <h2 class="text-3xl md:text-4xl font-semibold text-gray-900 mb-6 leading-tight">
+        Experience Smart Luxury Living in the Himalayas
+      </h2>
+
+      <p class="text-gray-600 leading-relaxed mb-6">
+        Bhumi Investors Infra brings a premium luxury villa experience through its flagship project
+        <strong>Celestia Retreat</strong>, located in the peaceful landscapes near Kanatal, Uttarakhand.
+        Designed for modern investors and lifestyle seekers, this project blends mountain serenity
+        with world-class architecture and smart ownership opportunities.
+      </p>
+
+      <p class="text-gray-600 leading-relaxed mb-8">
+        With only 30 exclusive villas, owners enjoy breathtaking Himalayan views, resort-style amenities,
+        and professional property management designed to generate passive rental income while allowing
+        personal use anytime.
+      </p>
+
+      <!-- Button -->
+      <a href="#" class="inline-flex items-center gap-3 bg-green-900 text-white px-8 py-3 font-semibold relative group overflow-hidden">
+        <span class="absolute left-0 top-0 h-full w-2 bg-yellow-500 transition-all duration-300 group-hover:w-full opacity-20"></span>
+        <span class="relative">ABOUT MORE</span>
+        <span class="relative transform transition-transform duration-300 group-hover:translate-x-1">›</span>
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<section class="py-10 pt-20 bg-gray-100">
+<div class="max-w-7xl mx-auto px-6">
+
+<!-- Heading -->
+<div class="text-center mb-8">
+<p class="text-yellow-600 uppercase tracking-widest text-sm mb-3">Project Gallery</p>
+<h2 class="text-3xl md:text-4xl font-semibold text-gray-900 mb-4">Explore Celestia Retreat</h2>
+<p class="max-w-2xl mx-auto text-gray-600">
+Discover the beauty of Celestia Retreat through our curated gallery showcasing
+luxury villas, breathtaking Himalayan landscapes, and the serene surroundings
+of Kanatal.
+</p>
+</div>
+
+<!-- Gallery Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+<!-- Image -->
+<div class="gallery-item">
+<img src="img/villa1.jpg" alt="">
+<div class="gallery-overlay">
+<h3>Luxury Villa Exterior</h3>
+</div>
+</div>
+
+<div class="gallery-item">
+<img src="img/villa2.jpg" alt="">
+<div class="gallery-overlay">
+<h3>Himalayan View</h3>
+</div>
+</div>
+
+<div class="gallery-item">
+<img src="img/villa-celestia.jpg" alt="">
+<div class="gallery-overlay">
+<h3>Celestia Retreat Villas</h3>
+</div>
+</div>
+
+<div class="gallery-item">
+<img src="img/villa-celestia1.jpg" alt="">
+<div class="gallery-overlay">
+<h3>Kanatal Landscape</h3>
+</div>
+</div>
+
+<div class="gallery-item">
+<img src="img/luxury-villa.jpg" alt="">
+<div class="gallery-overlay">
+<h3>Luxury Interior</h3>
+</div>
+</div>
+
+<div class="gallery-item">
+<img src="img/villa1.jpg" alt="">
+<div class="gallery-overlay">
+<h3>Mountain Sunset View</h3>
+</div>
+</div>
+
+</div>
+
+</div>
+</section>
+
+
+<section class="py-20 bg-gray-100">
+  <div class="max-w-7xl mx-auto px-6">
+    <!-- Section Title -->
+    <div class="text-center max-w-3xl mx-auto mb-14">
+      <h2 class="text-3xl md:text-4xl font-semibold text-gray-900 mb-4">
+        Why Choose Bhumi Investors Infra
+      </h2>
+      <p class="text-gray-600 leading-relaxed">
+        Discover a unique blend of luxury living and smart investment with Celestia Retreat. 
+        Our thoughtfully designed villas combine breathtaking Himalayan views, premium 
+        construction, and professional management to deliver both lifestyle and financial value.
+      </p>
+    </div>
+
+    <div class="grid lg:grid-cols-3 gap-8">
+
+      <!-- Card -->
+      <div class="relative bg-white border rounded-2xl p-8 text-center group overflow-hidden transition duration-500 hover:shadow-xl">
+        <span class="absolute top-0 left-0 w-16 h-16 bg-yellow-600 clip-path-diagonal"></span>
+        <div class="w-16 h-16 mx-auto mb-6 flex items-center justify-center rounded-full bg-gray-100 text-yellow-600 text-2xl group-hover:bg-gray-900 group-hover:text-yellow-400 transition duration-500">
+          <i class="fa-solid fa-mountain-city"></i>
+        </div>
+        <h3 class="font-semibold text-lg mb-2 transition group-hover:text-gray-900">Celestia Retreat</h3>
+        <p class="text-gray-500 text-sm">A premium collection of luxury villas surrounded by the serene Himalayan landscape.</p>
+      </div>
+
+      <!-- Card -->
+      <div class="relative bg-white border rounded-2xl p-8 text-center group overflow-hidden transition duration-500 hover:shadow-xl">
+        <span class="absolute top-0 left-0 w-16 h-16 bg-yellow-600 clip-path-diagonal"></span>
+        <div class="w-16 h-16 mx-auto mb-6 flex items-center justify-center rounded-full bg-gray-100 text-yellow-600 text-2xl group-hover:bg-gray-900 group-hover:text-yellow-400 transition duration-500">
+          <i class="fa-solid fa-location-dot"></i>
+        </div>
+        <h3 class="font-semibold text-lg mb-2 transition group-hover:text-gray-900">Prime Himalayan Location</h3>
+        <p class="text-gray-500 text-sm">Located near Kanatal offering stunning mountain views and peaceful surroundings.</p>
+      </div>
+
+      <!-- Image -->
+      <!-- <div class="rounded-2xl overflow-hidden shadow-lg">
+        <img src="img/location-villas.jpg" class="w-full h-full object-cover" alt="Luxury Villas">
+      </div> -->
+
+      <!-- Card -->
+      <div class="relative bg-white border rounded-2xl p-8 text-center group overflow-hidden transition duration-500 hover:shadow-xl">
+        <span class="absolute top-0 left-0 w-16 h-16 bg-yellow-600 clip-path-diagonal"></span>
+        <div class="w-16 h-16 mx-auto mb-6 flex items-center justify-center rounded-full bg-gray-100 text-yellow-600 text-2xl group-hover:bg-gray-900 group-hover:text-yellow-400 transition duration-500">
+          <i class="fa-solid fa-ruler-combined"></i>
+        </div>
+        <h3 class="font-semibold text-lg mb-2 transition group-hover:text-gray-900">Spacious Villa Designs</h3>
+        <p class="text-gray-500 text-sm">Thoughtfully planned villas designed for luxury living and panoramic views.</p>
+      </div>
+
+      <!-- Card -->
+      <div class="relative bg-white border rounded-2xl p-8 text-center group overflow-hidden transition duration-500 hover:shadow-xl">
+        <span class="absolute top-0 left-0 w-16 h-16 bg-yellow-600 clip-path-diagonal"></span>
+        <div class="w-16 h-16 mx-auto mb-6 flex items-center justify-center rounded-full bg-gray-100 text-yellow-600 text-2xl group-hover:bg-gray-900 group-hover:text-yellow-400 transition duration-500">
+          <i class="fa-solid fa-indian-rupee-sign"></i>
+        </div>
+        <h3 class="font-semibold text-lg mb-2 transition group-hover:text-gray-900">Investment from ₹1.25 Cr</h3>
+        <p class="text-gray-500 text-sm">An exclusive opportunity to own a luxury villa with long-term value.</p>
+      </div>
+
+      <!-- Card -->
+      <div class="relative bg-white border rounded-2xl p-8 text-center group overflow-hidden transition duration-500 hover:shadow-xl">
+        <span class="absolute top-0 left-0 w-16 h-16 bg-yellow-600 clip-path-diagonal"></span>
+        <div class="w-16 h-16 mx-auto mb-6 flex items-center justify-center rounded-full bg-gray-100 text-yellow-600 text-2xl group-hover:bg-gray-900 group-hover:text-yellow-400 transition duration-500">
+          <i class="fa-solid fa-chart-line"></i>
+        </div>
+        <h3 class="font-semibold text-lg mb-2 transition group-hover:text-gray-900">Passive Rental Potential</h3>
+        <p class="text-gray-500 text-sm">Professionally managed rentals designed to generate consistent returns.</p>
+      </div>
+
+      <!-- Card -->
+      <div class="relative bg-white border rounded-2xl p-8 text-center group overflow-hidden transition duration-500 hover:shadow-xl">
+        <span class="absolute top-0 left-0 w-16 h-16 bg-yellow-600 clip-path-diagonal"></span>
+        <div class="w-16 h-16 mx-auto mb-6 flex items-center justify-center rounded-full bg-gray-100 text-yellow-600 text-2xl group-hover:bg-gray-900 group-hover:text-yellow-400 transition duration-500">
+          <i class="fa-solid fa-handshake"></i>
+        </div>
+        <h3 class="font-semibold text-lg mb-2 transition group-hover:text-gray-900">Trusted Developer</h3>
+        <p class="text-gray-500 text-sm">Bhumi Investors Infra brings years of expertise in luxury real estate development.</p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+<section class="py-10 bg-black text-white">
+<div class="max-w-7xl mx-auto px-6">
+
+<!-- Section Heading -->
+<div class="text-center mb-12">
+<p class="text-yellow-500 uppercase tracking-widest text-sm mb-3">A Premium Lifestyle</p>
+<h2 class="text-3xl md:text-4xl font-semibold">Why Invest With Bhumi Investors Infra</h2>
+</div>
+
+<!-- Category Tabs -->
+<div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 mb-12">
+
+<button class="tab-card active" data-tab="villas">
+<i class="fa-solid fa-house"></i>
+<span>Luxury Villas</span>
+</button>
+
+<button class="tab-card" data-tab="location">
+<i class="fa-solid fa-mountain"></i>
+<span>Location</span>
+</button>
+
+<button class="tab-card" data-tab="amenities">
+<i class="fa-solid fa-spa"></i>
+<span>Amenities</span>
+</button>
+
+<button class="tab-card" data-tab="investment">
+<i class="fa-solid fa-chart-line"></i>
+<span>Investment</span>
+</button>
+
+<button class="tab-card" data-tab="management">
+<i class="fa-solid fa-handshake"></i>
+<span>Management</span>
+</button>
+
+</div>
+
+<!-- Content Area -->
+<div class="grid lg:grid-cols-2 gap-10 items-center">
+
+<!-- Text Content -->
+<div id="content-area">
+
+<h3 class="text-2xl font-semibold mb-4">Luxury Himalayan Villas</h3>
+
+<p class="text-gray-300 leading-relaxed mb-6">
+Celestia Retreat by Bhumi Investors Infra offers a limited collection of thoughtfully designed luxury villas nestled in the serene Himalayan landscape. Each residence blends modern architecture with natural surroundings, creating a private sanctuary for relaxation, comfort, and elevated mountain living. Every villa is carefully planned to maximize natural light, panoramic mountain views, and spacious interiors. The design philosophy focuses on delivering a harmonious balance between luxury living and the tranquility of nature, making it an ideal retreat away from the chaos of city life.
+</p>
+
+<a href="#" class="inline-flex items-center gap-3 bg-yellow-600 text-black px-7 py-3 font-semibold hover:bg-yellow-500 transition">
+Explore Villas
+<span>›</span>
+</a>
+
+</div>
+
+<!-- Image -->
+<div>
+<img id="content-image" src="img/luxury-villa.jpg" class="rounded-2xl shadow-lg w-full object-cover" alt="">
+</div>
+
+</div>
+
+</div>
+</section>
+
+<section class="py-20 bg-gray-100">
+<div class="max-w-7xl mx-auto px-6">
+
+<!-- Heading -->
+<div class="text-center mb-14">
+<p class="text-sm tracking-widest text-yellow-600 uppercase mb-2">Nearby Destinations</p>
+<h2 class="text-3xl md:text-4xl font-semibold text-gray-900">Explore Attractions Around Celestia Retreat</h2>
+</div>
+
+<!-- Cards -->
+<div class="attraction-wrapper">
+
+<!-- Card -->
+<div class="attraction-card">
+<img src="img/luxury-villa.jpg" alt="">
+<div class="overlay">
+<h3>Mussoorie</h3>
+<a href="#" class="explore-btn">Explore →</a>
+</div>
+<span class="vertical-title">MUSSOORIE</span>
+</div>
+
+<!-- Card -->
+<div class="attraction-card">
+<img src="img/villa-celestia1.jpg" alt="">
+<div class="overlay">
+<h3>Kanatal</h3>
+<a href="#" class="explore-btn">Explore →</a>
+</div>
+<span class="vertical-title">KANATAL</span>
+</div>
+
+<!-- Card -->
+<div class="attraction-card">
+<img src="img/villa-celestia.jpg" alt="">
+<div class="overlay">
+<h3>Tehri Lake</h3>
+<a href="#" class="explore-btn">Explore →</a>
+</div>
+<span class="vertical-title">TEHRI LAKE</span>
+</div>
+
+<!-- Card -->
+<div class="attraction-card">
+<img src="img/villa2.jpg" alt="">
+<div class="overlay">
+<h3>Rishikesh</h3>
+<a href="#" class="explore-btn">Explore →</a>
+</div>
+<span class="vertical-title">RISHIKESH</span>
+</div>
+
+<!-- Card -->
+<div class="attraction-card">
+<img src="img/villa1.jpg" alt="">
+<div class="overlay">
+<h3>Dhanaulti</h3>
+<a href="#" class="explore-btn">Explore →</a>
+</div>
+<span class="vertical-title">DHANAULTI</span>
+</div>
+
+</div>
+
+</div>
+</section>
+
+
+
+<section class="py-24 bg-black text-white">
+<div class="max-w-7xl mx-auto px-6">
+
+<!-- Heading -->
+<div class="text-center mb-16">
+<p class="text-yellow-500 tracking-widest text-sm uppercase mb-3">Client Testimonials</p>
+<h2 class="text-4xl font-semibold">What Our Clients Say</h2>
+</div>
+
+<div class="relative">
+
+<!-- Slider -->
+<div class="swiper reviewSlider">
+
+<div class="swiper-wrapper">
+
+<!-- Review -->
+<div class="swiper-slide bg-neutral-900 p-8 rounded-xl border border-neutral-800">
+<div class="text-yellow-500 mb-4">
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+</div>
+
+<p class="text-gray-300 mb-6 text-sm leading-relaxed">
+The serene environment and premium amenities make Celestia Retreat an
+outstanding destination for relaxation and long-term investment.
+</p>
+
+<h4 class="font-semibold text-white">Karan Malhotra</h4>
+<span class="text-gray-500 text-xs">Travel Enthusiast</span>
+</div>
+
+<div class="swiper-slide bg-neutral-900 p-8 rounded-xl border border-neutral-800">
+<div class="text-yellow-500 mb-4">
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+</div>
+
+<p class="text-gray-300 mb-6 text-sm leading-relaxed">
+A truly premium development in the mountains. The architecture and
+location make it a perfect getaway home.
+</p>
+
+<h4 class="font-semibold text-white">Ritika Arora</h4>
+<span class="text-gray-500 text-xs">Architect</span>
+</div>
+
+<div class="swiper-slide bg-neutral-900 p-8 rounded-xl border border-neutral-800">
+<div class="text-yellow-500 mb-4">
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+</div>
+
+<p class="text-gray-300 mb-6 text-sm leading-relaxed">
+Investing in Celestia Retreat was one of the best decisions I’ve made.
+The location and villa design perfectly combine luxury with nature.
+</p>
+
+<h4 class="font-semibold text-white">Rahul Sharma</h4>
+<span class="text-gray-500 text-xs">Real Estate Investor</span>
+</div>
+
+<div class="swiper-slide bg-neutral-900 p-8 rounded-xl border border-neutral-800">
+<div class="text-yellow-500 mb-4">
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+</div>
+
+<p class="text-gray-300 mb-6 text-sm leading-relaxed">
+The project offers stunning Himalayan views and a peaceful environment.
+Perfect for anyone looking for a luxury mountain home.
+</p>
+
+<h4 class="font-semibold text-white">Priya Mehta</h4>
+<span class="text-gray-500 text-xs">Entrepreneur</span>
+</div>
+
+<div class="swiper-slide bg-neutral-900 p-8 rounded-xl border border-neutral-800">
+<div class="text-yellow-500 mb-4">
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+</div>
+
+<p class="text-gray-300 mb-6 text-sm leading-relaxed">
+A perfect blend of lifestyle and investment opportunity with breathtaking
+Himalayan surroundings.
+</p>
+
+<h4 class="font-semibold text-white">Neha Kapoor</h4>
+<span class="text-gray-500 text-xs">Marketing Director</span>
+</div>
+
+</div>
+
+</div>
+
+<!-- Navigation Buttons -->
+<div class="swiper-button-prev text-yellow-500"></div>
+<div class="swiper-button-next text-yellow-500"></div>
+
+</div>
+
+</div>
+</section>
+
+<section class="py-24 bg-gray-100">
+<div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center">
+
+<!-- Left Content -->
+<div>
+
+<h2 class="text-4xl font-semibold text-gray-900 mb-6">
+Start Your Journey With Luxury Villas in the Himalayas
+</h2>
+
+<p class="text-gray-600 mb-5 leading-relaxed">
+Bhumi Investors Infra presents <strong>Celestia Retreat</strong>, a premium
+collection of luxury villas located near Kanatal in Uttarakhand.
+Experience breathtaking Himalayan views, world-class amenities,
+and a peaceful environment designed for both lifestyle living
+and smart investment.
+</p>
+
+<p class="text-gray-600 mb-5 leading-relaxed">
+With villas starting from <strong>₹1.25 Cr</strong>, this project offers
+an exclusive opportunity to own a private mountain retreat
+while generating passive rental income through professional
+property management.
+</p>
+
+<p class="text-gray-600 leading-relaxed">
+Submit your enquiry today to receive complete project details,
+pricing information, and personalized assistance from our team.
+</p>
+
+</div>
+
+<!-- Enquiry Form -->
+<div class="bg-white p-8 rounded-xl shadow-lg">
+
+<h3 class="text-2xl font-semibold mb-6 text-center">Enquire Now</h3>
+
+<form id="enquiryForm"
+action="https://formsubmit.co/ajitsingh201301@gmail.com"
+method="POST">
+
+<input type="hidden" name="_captcha" value="false">
+
+<input type="text"
+name="name"
+placeholder="Full Name"
+required
+class="w-full border rounded-lg p-3 mb-4 focus:outline-none focus:border-yellow-600">
+
+<input type="tel"
+name="phone"
+placeholder="Phone Number"
+required
+class="w-full border rounded-lg p-3 mb-4 focus:outline-none focus:border-yellow-600">
+
+<input type="email"
+name="email"
+placeholder="Email Address"
+required
+class="w-full border rounded-lg p-3 mb-4 focus:outline-none focus:border-yellow-600">
+
+<textarea
+name="message"
+placeholder="Your Message"
+rows="4"
+class="w-full border rounded-lg p-3 mb-5 focus:outline-none focus:border-yellow-600"></textarea>
+
+<button
+type="submit"
+class="w-full bg-green-600 hover:bg-green-700 text-white font-semibold py-3 rounded-lg transition">
+Submit & Connect on WhatsApp
+</button>
+
+</form>
+
+</div>
+
+</div>
+</section>
+
+<footer class="bg-black text-gray-300 py-8">
+<div class="max-w-7xl mx-auto px-6">
+
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+
+<!-- About -->
+<div>
+<h3 class="text-white text-xl font-semibold mb-4">About Bhumi Investors Infra</h3>
+
+<p class="text-sm leading-relaxed mb-4">
+Bhumi Investors Infra Pvt. Ltd. is a trusted real estate development company
+focused on creating premium luxury living experiences in serene natural
+destinations across India.
+</p>
+
+<p class="text-sm leading-relaxed">
+Our flagship project <strong>Celestia Retreat</strong> offers exclusive
+luxury villas near Kanatal, Uttarakhand — combining breathtaking Himalayan
+views with smart ownership investment opportunities.
+</p>
+</div>
+
+<!-- Quick Links -->
+<div>
+<h3 class="text-white text-xl font-semibold mb-4">Quick Links</h3>
+
+<ul class="space-y-2 text-sm">
+
+<li><a href="/" class="hover:text-yellow-500 transition">Home</a></li>
+<li><a href="/celestia-retreat" class="hover:text-yellow-500 transition">Celestia Retreat</a></li>
+<!-- <li><a href="#" class="hover:text-yellow-500 transition">Location</a></li>
+<li><a href="#" class="hover:text-yellow-500 transition">Amenities</a></li> -->
+<li><a href="/gallery" class="hover:text-yellow-500 transition">Gallery</a></li>
+<li><a href="/about-us" class="hover:text-yellow-500 transition">About Us</a></li>
+<li><a href="/contact-us" class="hover:text-yellow-500 transition">Contact Us</a></li>
+
+</ul>
+</div>
+
+<!-- Investment Highlights -->
+<div>
+<h3 class="text-white text-xl font-semibold mb-4">Investment Highlights</h3>
+
+<ul class="space-y-2 text-sm">
+
+<li>Luxury Villas Starting from ₹1.25 Cr</li>
+<li>Prime Location Near Kanatal</li>
+<li>High Rental Income Potential</li>
+<li>Professional Property Management</li>
+<li>Limited 30 Exclusive Villas</li>
+<li>Resort Style Lifestyle Amenities</li>
+<li>Breathtaking Himalayan Views</li>
+
+</ul>
+</div>
+
+<!-- Contact -->
+<div>
+
+<h3 class="text-white text-xl font-semibold mb-4">Contact Us</h3>
+
+<ul class="space-y-3 text-sm">
+
+<li>Sales Office Hours: 10:00 AM – 7:00 PM</li>
+
+<li>
+<a href="tel:+919999999999" class="hover:text-yellow-500 transition">
+Call: +91 93545 41413
+</a>
+</li>
+
+<li>
+<a href="mailto:info@bhumiinvestorsinfra.com" class="hover:text-yellow-500 transition">
+Jitendrasingh.aipl@gmail.com
+</a>
+</li>
+
+<li>9th Floor, Supertech Astralis,
+Sector-94, Noida-201301</li>
+
+</ul>
+
+<!-- Social Icons -->
+<div class="flex gap-3 mt-5">
+
+<a href="#" class="w-10 h-10 border border-gray-600 rounded-full flex items-center justify-center hover:border-yellow-500 hover:text-yellow-500 transition">
+<i class="fab fa-facebook-f"></i>
+</a>
+
+<a href="#" class="w-10 h-10 border border-gray-600 rounded-full flex items-center justify-center hover:border-yellow-500 hover:text-yellow-500 transition">
+<i class="fab fa-instagram"></i>
+</a>
+
+<a href="#" class="w-10 h-10 border border-gray-600 rounded-full flex items-center justify-center hover:border-yellow-500 hover:text-yellow-500 transition">
+<i class="fab fa-linkedin-in"></i>
+</a>
+
+<a href="#" class="w-10 h-10 border border-gray-600 rounded-full flex items-center justify-center hover:border-yellow-500 hover:text-yellow-500 transition">
+<i class="fab fa-youtube"></i>
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- Bottom Links -->
+<div class="mt-12 pt-8 border-t border-gray-800">
+
+<div class="text-xs text-gray-500 leading-relaxed">
+
+<a href="#" class="hover:text-yellow-500">Luxury Villas in Kanatal</a> |
+<a href="#" class="hover:text-yellow-500">Himalayan Villas Investment</a> |
+<a href="#" class="hover:text-yellow-500">Luxury Villas Near Mussoorie</a> |
+<a href="#" class="hover:text-yellow-500">Second Home Investment in Uttarakhand</a> |
+<a href="#" class="hover:text-yellow-500">Luxury Villa Projects in Kanatal</a> |
+<a href="#" class="hover:text-yellow-500">Premium Mountain Villas</a> |
+<a href="#" class="hover:text-yellow-500">Luxury Retreat Near Rishikesh</a> |
+<a href="#" class="hover:text-yellow-500">High ROI Real Estate Investment</a> |
+<a href="#" class="hover:text-yellow-500">Smart Ownership Villas</a> |
+<a href="#" class="hover:text-yellow-500">Celestia Retreat Villas</a>
+
+</div>
+
+</div>
+</div>
+</footer>
+<!-- Copyright -->
+<!-- Base Footer -->
+<div class="bg-yellow-700 text-white py-4">
+  <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between text-sm">
+
+    <!-- Left Text -->
+    <p class="text-center md:text-left">
+      © 2026 Copyright Bhumi Investors Infra. All rights reserved. 
+      Designed & Marketed By <a href="https://www.linkedin.com/in/ajit-singh-prajapati/" target="_blank" class="font-semibold hover:underline">Ajeet Singh</a>
+    </p>
+
+    <!-- Right Links -->
+    <div class="flex gap-6 mt-3 md:mt-0">
+      <a href="/privacy-policy.html" class="hover:text-black transition">Privacy Policy</a>
+      <a href="/disclaimer.html" class="hover:text-black transition">Disclaimer</a>
+      <a href="/terms-conditions.html" class="hover:text-black transition">Terms & Conditions</a>
+    </div>
+
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
